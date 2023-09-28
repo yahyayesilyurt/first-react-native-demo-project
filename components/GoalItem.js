@@ -4,7 +4,7 @@ const GoalItem = (props) => {
   return (
     <View key={props.id} style={styles.goalItem}>
       <Pressable
-        android_ripple={{ color: "#210644" }}
+        android_ripple={{ color: "#dfe7fa" }}
         onPress={props.onDeleteItem.bind(this, props.id)}
         style={({ pressed }) => pressed && styles.pressedItem}
       >
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   goalItem: {
     margin: 8,
     borderRadius: 6,
-    backgroundColor: "#5e0acc",
+    backgroundColor: "#29347f",
   },
   pressedItem: {
     opacity: 0.5,
